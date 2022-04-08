@@ -1,0 +1,171 @@
+* {
+  user-select: none;
+}
+body {
+  background: #192428;
+  margin: 0;
+  font-family: monospace;
+}
+  
+video {
+  position: fixed;
+  background: #2d383c;
+  width: 75%;
+  height: 50%;
+  left: 12.5%;
+  top: 12.5%;
+  z-index: -2;
+}
+
+
+.entryScreen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #1a1f20;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #0784b5;
+  font-size: calc(1vw + 1vh + 0.5vmin);
+}
+
+.scriptStatus {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  left: 0;
+  top: calc(-0.5vw - 0.5vh - 0.25vmin);
+  text-align: center;
+  color: #0784b5;
+  font-size: calc(1vw + 1vh + 0.5vmin);
+}
+
+.cameraMessage:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.cameraMessage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+button {
+  width: 15%;
+  height: 4.5%;
+  outline: none;
+  border: none;
+  background: #42535a;
+  color: #01aff3;
+  position: absolute;
+  z-index: -1;
+  font-size: calc(1vw + 1vh + 0.5vmin);
+  line-height: 0;
+}
+
+.dataButton:nth-of-type(1) {
+  left: 25%;
+  top: 85%;
+}
+.dataButton:nth-of-type(2) {
+  left: 42.5%;
+  top: 77.5%;
+}
+.dataButton:nth-of-type(3) {
+  left: 60%;
+  top: 85%;
+}
+.dataButton:nth-of-type(4) {
+  left: 42.5%;
+  top: 92.5%;
+}
+.dataButton:nth-of-type(5) {
+  left: 42.5%;
+  top: 85%;
+}
+.train {
+  left: 25%;
+  top: 92.5%
+}
+.reset {
+  left: 60%;
+  top: 92.5%;
+}
+
+
+
+/* .entryScreen {
+  display: none;
+} */
+
+.selectionMenu {
+  display: none;
+}
+/* .setupButtons {
+  display: none;
+} */
+
+.back {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 4vmin;
+  height: 4vmin;
+  background: none;
+  font-size: 4vmin;
+  color: #01aff3;
+  cursor: pointer;
+  z-index: 6;
+  font-family: monospace;
+}
+
+.pieMenu {
+  height: 37.5vmin;
+  width: 37.5vmin;
+  background: #42535a;
+  border-radius: 50%;
+  position: fixed;
+  left: calc(50% - 18.75vmin);
+  top: calc(100% - 37.5vmin);
+}
+.slice {
+  position: absolute;
+  margin-top: 18.375vmin;
+  width: 37.5vmin;
+  border-bottom: .5vmin solid #192428;
+}
+.slice:nth-of-type(1) {
+  transform: rotate(45deg);
+}
+.slice:nth-of-type(2) {
+  transform: rotate(-45deg);
+}
+.navigationText {
+  position: absolute;
+  text-align: center;
+  font-size: 1.8vmin;
+  width: 100%;
+  margin-top: 0;
+  line-height: 36.5vmin;
+  color: #01aff3;
+}
+
+.navigationText:nth-of-type(1) {
+  margin-left: -10.5vmin;
+}
+.navigationText:nth-of-type(2) {
+  margin-top: -10.5vmin;
+}
+.navigationText:nth-of-type(3) {
+  margin-left: 10.5vmin;
+}
+.navigationText:nth-of-type(4) {
+  margin-top: 10.5vmin;
+}
